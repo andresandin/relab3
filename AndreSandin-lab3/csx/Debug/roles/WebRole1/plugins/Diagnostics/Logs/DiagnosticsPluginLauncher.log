@@ -1,0 +1,17 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Emulator config file set to C:\Users\sandi\OneDrive\Skrivbord\Sandin-Andre\AndreSandin-lab3\AndreSandin-lab3\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] DiagnosticsStoreRootPath set to: C:\Users\sandi\AppData\Local\dftmp\Resources\0e7a74f9-9d31-432f-8b23-96c81737aa54
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Loading config file: C:\Users\sandi\OneDrive\Skrivbord\Sandin-Andre\AndreSandin-lab3\AndreSandin-lab3\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Config file to read: C:\Users\sandi\OneDrive\Skrivbord\Sandin-Andre\AndreSandin-lab3\AndreSandin-lab3\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Emulator config file set to C:\Users\sandi\OneDrive\Skrivbord\Sandin-Andre\AndreSandin-lab3\AndreSandin-lab3\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:07] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:08] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:08] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:32:08] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:33:18] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [2020-06-19 10:33:18] DiagnosticPlugin exited with code 0

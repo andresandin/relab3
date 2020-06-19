@@ -1,0 +1,133 @@
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:32:08] Failed to save IIS Directory state
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:32:08] System.UnauthorizedAccessException: Filnamn: redirection.config
+Fel: Det går inte att läsa konfigurationsfilen på grund av otillräckliga behörigheter
+
+
+   vid Microsoft.Web.Administration.Interop.IAppHostAdminManager.GetAdminSection(String bstrSectionName, String bstrPath)
+   vid Microsoft.Web.Administration.Configuration.GetSectionInternal(ConfigurationSection section, String sectionPath, String locationPath)
+   vid Microsoft.Web.Administration.ServerManager.SitesSectionCreator()
+   vid Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   vid Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
+   vid Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   vid Microsoft.Azure.Plugins.Plugin.DiagnosticsPluginManager.SaveIISDirectoryState()
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Emulator config file set to C:\Users\sandi\OneDrive\Skrivbord\Sandin-Andre\AndreSandin-lab3\AndreSandin-lab3\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] DiagnosticsStoreRootPath set to: C:\Users\sandi\AppData\Local\dftmp\Resources\0e7a74f9-9d31-432f-8b23-96c81737aa54
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Loading config file: C:\Users\sandi\OneDrive\Skrivbord\Sandin-Andre\AndreSandin-lab3\AndreSandin-lab3\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Config file to read: C:\Users\sandi\OneDrive\Skrivbord\Sandin-Andre\AndreSandin-lab3\AndreSandin-lab3\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Emulator config file set to C:\Users\sandi\OneDrive\Skrivbord\Sandin-Andre\AndreSandin-lab3\AndreSandin-lab3\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+  <WadCfg>
+    <DiagnosticMonitorConfiguration overallQuotaInMB="4096">
+      <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
+      <Logs scheduledTransferPeriod="PT1M" scheduledTransferLogLevelFilter="Error" />
+      <Directories scheduledTransferPeriod="PT1M">
+        <IISLogs containerName="wad-iis-logfiles" />
+        <FailedRequestLogs containerName="wad-failedrequestlogs" />
+      </Directories>
+      <WindowsEventLog scheduledTransferPeriod="PT1M">
+        <DataSource name="Application!*[System[(Level=1 or Level=2 or Level=3)]]" />
+        <DataSource name="Windows Azure!*[System[(Level=1 or Level=2 or Level=3 or Level=4)]]" />
+      </WindowsEventLog>
+      <CrashDumps containerName="wad-crashdumps" dumpType="Mini">
+        <CrashDumpConfiguration processName="WaIISHost.exe" />
+        <CrashDumpConfiguration processName="WaWorkerHost.exe" />
+        <CrashDumpConfiguration processName="w3wp.exe" />
+      </CrashDumps>
+      <PerformanceCounters scheduledTransferPeriod="PT1M">
+        <PerformanceCounterConfiguration counterSpecifier="\Memory\Available MBytes" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\ISAPI Extension Requests/sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\Bytes Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Requests/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Errors Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Queued" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Rejected" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor(_Total)\% Processor Time" sampleRate="PT3M" />
+      </PerformanceCounters>
+    </DiagnosticMonitorConfiguration>
+  </WadCfg>
+  <StorageAccount>devstoreaccount1</StorageAccount>
+</PublicConfig>
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Private setting is loaded
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Is config json/xml loaded
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:08] Checking if configuration needs to be fetched from the storage account and doing so if needed.
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:09] Successfully created checkpoint file C:\Users\sandi\AppData\Local\dftmp\Resources\0e7a74f9-9d31-432f-8b23-96c81737aa54\WAD0105\Configuration\Checkpoint.txt
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:09] Will use local resource directory C:\Users\sandi\AppData\Local\dftmp\Resources\0e7a74f9-9d31-432f-8b23-96c81737aa54\WAD0105
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:09] Will use endpoint https://core.windows.net for storage.
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:09] Exception in creating the ServerManager; is IIS installed?
+ Error:System.UnauthorizedAccessException: Filnamn: redirection.config
+Fel: Det går inte att läsa konfigurationsfilen på grund av otillräckliga behörigheter
+
+
+   vid Microsoft.Web.Administration.Interop.IAppHostAdminManager.GetAdminSection(String bstrSectionName, String bstrPath)
+   vid Microsoft.Web.Administration.Configuration.GetSectionInternal(ConfigurationSection section, String sectionPath, String locationPath)
+   vid Microsoft.Web.Administration.ServerManager.SitesSectionCreator()
+   vid Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   vid Microsoft.Web.Administration.ServerManager.SitesCollectionCreator()
+   vid Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   vid Microsoft.Azure.Plugins.Plugin.WadConfigProcessor.AddDirectories(EventsType mdsEvents, Directories wadDirectories)
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:09] Running in emulator mode, crash dumps not enabled
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:09] Checking to see if Application Insights extension needs to be configured.
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:32:09] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\sandi\AppData\Local\dftmp\Resources\0e7a74f9-9d31-432f-8b23-96c81737aa54\WAD0105"  -ConfigFile "C:\Users\sandi\AppData\Local\dftmp\Resources\0e7a74f9-9d31-432f-8b23-96c81737aa54\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-17f149076fde4e66acca9a61bb396b11  -TotalShutDownEvent WADDM-TotalShutDown-17f149076fde4e66acca9a61bb396b11 -InitializedEvent WADM-StartUp-17f149076fde4e66acca9a61bb396b11 -parent 19944 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:32:39] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:33:09] MonAgentHost.exe started
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:33:09] DiagnoticsPlugin started.
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:33:09] DiagnoticsPlugin now waiting on events "DiagnosticPlugin-ShutdownEvent", "DiagnosticPlugin-TotalShutdownEvent" or "DiagnosticPlugin-RestartEvent".
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:33:09] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:33:39] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Information: 0 : [2020-06-19 10:34:08] Failed to update IIS Directory state in directory monitor
+Filnamn: redirection.config
+Fel: Det går inte att läsa konfigurationsfilen på grund av otillräckliga behörigheter
+
+
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:34:09] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:34:39] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:35:09] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:35:39] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:36:09] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:36:39] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:37:09] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:37:39] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [2020-06-19 10:38:09] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   vid Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   vid ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   vid Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
